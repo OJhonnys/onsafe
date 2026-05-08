@@ -1,0 +1,221 @@
+/* --- Reset and Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0f172a;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #2563eb;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.whatsapp-icon img {
+    height: 46px;
+    transition: transform 0.3s;
+}
+
+.btn-primary.btn-sm {
+    padding: 10px 20px; 
+    font-size: 14px;    
+    height: 40px;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+
+.btn-primary.btn-sm:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Aumenta 10% de tamanho */
+}
+
+
+/* --- HERO SECTION --- */
+.hero {
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #dbeafe;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 span {
+    color: #2563eb;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 500px;
+    margin-bottom: 32px;
+}
+
+/* Buttons */
+.cta-group {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #1e293b;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 28px;
+    color: #2563eb;
+}
+
+.stat-item span {
+    font-size: 12px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* --- HERO IMAGE --- */
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+}
+
+.floating-card {
+    position: absolute;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-right {
+    top: 40px;
+    right: -20px;
+}
+
+.bottom-left {
+    bottom: 40px;
+    left: -30px;
+}
