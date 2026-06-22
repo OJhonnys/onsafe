@@ -11,7 +11,7 @@
     --medium-slate: #1e293b;
     --text-gray: #64748b;
     --text-light: #94a3b8;
-    --bg-light: #f8fafc;
+    --bg-light: #f1f5f9;
     --white: #ffffff;
     --wpp-green: #25D366;
 }
@@ -1232,91 +1232,74 @@ section[id] {
 }
 
 /* ==========================================================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE GLOBAL (Otimizada e Organizada)
    ========================================================================== */
 
-/* Telas de Tablets e Notebooks menores */
+/* 1. Tablets e Notebooks menores (até 1024px) */
 @media (max-width: 1024px) {
     .navbar { padding: 20px 5%; }
     
-    .hero .container, 
-    .about .container, 
-    .founder .container { 
-        flex-direction: column; 
-        gap: 50px;
-        text-align: left;
-    }
+    /* Hero: Foto primeiro */
+    .hero .container { flex-direction: column-reverse; gap: 40px; }
+    
+    .about .container, .founder .container { flex-direction: column; gap: 50px; }
     
     .hero-content, .about-content, .founder-content, 
-    .hero-image, .about-image-wrapper, .founder-image-wrapper {
-        width: 100%;
-    }
+    .hero-image, .about-image-wrapper, .founder-image-wrapper { width: 100%; }
     
-    .services-grid, .features-grid { 
-        grid-template-columns: repeat(2, 1fr); 
-    }
+    /* Serviços e Diferenciais: 2 por linha */
+    .services-grid, .features-grid { grid-template-columns: repeat(2, 1fr); }
     
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    /* Founder: Cards lado a lado */
+    .founder-stats-grid { flex-direction: row; flex-wrap: wrap; }
     
-    .contact-card {
-        flex-direction: column; 
-        max-width: 600px;
-    }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
     
-    .contact-info-side, .contact-form-side {
-        padding: 40px; 
-    }
+    .contact-card { flex-direction: column; max-width: 600px; }
+    .contact-info-side, .contact-form-side { padding: 40px; }
+
+    /* Ajuste de fonte e padding nos cards de Serviços */
+    .service-card h3 { font-size: 16px; }
+    .service-card p { font-size: 13px; }
+    .service-card { padding: 20px 16px; }
 }
 
-/* Telas de Tablets (iPad, etc) */
+/* 2. Tablets (até 768px) */
 @media (max-width: 768px) {
     .navbar nav { display: none; } 
-    
     .hero-content h1 { font-size: 40px; }
     
-    .services-header h2, 
-    .about-content h2, 
-    .founder-content h2,
-    .features-header h2,
-    .testimonials-header h2 { font-size: 32px; }
+    .services-header h2, .about-content h2, .founder-content h2,
+    .features-header h2, .testimonials-header h2 { font-size: 32px; }
     
-    .founder-stats-grid { flex-direction: column; gap: 12px; }
-    
-    .footer-top {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
+    .footer-top { flex-direction: column; gap: 40px; }
     .brand-info { max-width: 100%; }
-    
     .main-footer { padding: 60px 0 30px 0; }
 }
 
-/* Telas de Celulares */
+/* 3. Celulares (até 640px) */
 @media (max-width: 640px) {
-    .testimonials-grid, .features-grid {
-        grid-template-columns: 1fr;
-    }
+    /* Serviços e Diferenciais mantidos 2 por linha */
+    .services-grid, .features-grid { gap: 15px; }
     
-    .footer-bottom {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-    }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    
+    /* Ajustes da Navbar */
+    .nav-buttons { gap: 8px; }
+    .nav-buttons .btn-primary.btn-sm { padding: 8px 10px; font-size: 11px; }
 }
 
-/* Telas pequenas (Smartphones) */
+/* 4. Smartphones pequenos (até 480px) */
 @media (max-width: 480px) {
-    .services-grid { grid-template-columns: 1fr; }
     .cta-group { flex-direction: column; width: 100%; }
     .stats { justify-content: space-between; gap: 10px; }
     .brand-card { height: 360px; }
     .market-badge { right: 0; }
-    .form-row-twin {
-        flex-direction: column;
-        gap: 16px;
-    }
+    .form-row-twin { flex-direction: column; gap: 16px; }
     .contact-info-side h2 { font-size: 28px; }
+    
+    /* Navbar compacta */
+    .nav-buttons { gap: 6px; }
 }
