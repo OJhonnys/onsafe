@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>On Safe Tecnologia - Segurança Eletrônica</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body>
+<body id="top">
     <header class="navbar">
         <div class="logo">
-            <img src="/assets/icons/logo.png" alt="On Safe Tecnologia">
-            <h1>ON SAFE <br> Tecnologia</h1>
+            <a href="#top">
+                <img src="/assets/icons/logo.png" alt="On Safe Tecnologia">
+                <h1>ON SAFE <br> Tecnologia</h1>
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Fundador</a></li>
-                <li><a href="#">Diferenciais</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#founder">Fundador</a></li>
+                <li><a href="#differentials">Diferenciais</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
         <div class="nav-buttons">
-            <a href="#" class="whatsapp-icon"><img src="/assets/icons/wpp.png" alt="WhatsApp"></a>
-            <a href="#" class="btn-primary btn-sm">Orçamento</a>
+            <!-- Link direto para a API do WhatsApp (abre o app ou web) -->
+            <a href="https://wa.me/5541996614746?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento!" 
+            class="whatsapp-icon" 
+            target="_blank" 
+            rel="noopener noreferrer">
+                <img src="/assets/icons/wpp.png" alt="WhatsApp">
+            </a>
+
+            <!-- Link com o protocolo 'tel:' para disparar ligação no celular -->
+            <a href="tel:+5541996614746" class="btn-primary btn-sm">Orçamento por Telefone</a>
         </div>
     </header>
 
@@ -37,8 +48,8 @@
                 <p>A <strong>On Safe Tecnologia</strong> oferece soluções completas em CFTV, alarmes, controle de acesso e interfonia para condomínios e empresas.</p>
                 
                 <div class="cta-group">
-                    <a href="#" class="btn-primary">Solicitar Orçamento →</a>
-                    <a href="#" class="btn-secondary">Ver Serviços</a>
+                    <a href="#contact" class="btn-primary">Solicitar Orçamento</a>
+                    <a href="#services" class="btn-secondary">Ver Serviços</a>
                 </div>    
 
                 <div class="stats">
@@ -63,6 +74,477 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Services Section --> 
+    <section id="services" class="services">
+        <div class="container">
+            <!-- Cabeçalho da Seção -->
+            <div class="services-header">
+                <span class="section-badge">NOSSOS SERVIÇOS</span>
+                <h2>Soluções completas em <br> <span>segurança eletrônica</span></h2>
+                <p>Produzimos soluções profissionais sob medida para condomínios, empresas e residências.</p>
+            </div>
+
+            <!-- Grade de Cards -->
+            <div class="services-grid">
+                
+                <!-- Card 1: CFTV -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/camera.svg" alt="Ícone CFTV">
+                    </div>
+                    <h3>CFTV</h3>
+                    <p>Instalação e manutenção de sistemas de câmeras de alta resolução para perfeito funcionamento.</p>
+                </article>
+
+                <!-- Card 2: Controle de Acesso -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/lock.svg" alt="Ícone Controle de Acesso">
+                    </div>
+                    <h3>Controle de Acesso</h3>
+                    <p>Catracas, fechaduras digitais e biometria para um controle total de quem entra e sai.</p>
+                </article>
+
+                <!-- Card 3: Interfonia -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/phone.svg" alt="Ícone Interfonia">
+                    </div>
+                    <h3>Interfonia</h3>
+                    <p>Programação de centrais, monofones externos e internos com qualidade superior.</p>
+                </article>
+
+                <!-- Card 4: Portão Eletrônico -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/gate.svg" alt="Ícone Portão">
+                    </div>
+                    <h3>Portão Eletrônico</h3>
+                    <p>Instalação, programação e backup de central de comando para máxima conveniência.</p>
+                </article>
+
+                <!-- Card 5: Alarmes -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/bell.svg" alt="Ícone Alarmes">
+                    </div>
+                    <h3>Alarmes</h3>
+                    <p>Testes em todos os sensores, limpeza, ajustes e monitoramento profissional.</p>
+                </article>
+
+                <!-- Card 6: Automação -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/cpu.svg" alt="Ícone Automação">
+                    </div>
+                    <h3>Automação</h3>
+                    <p>Soluções inteligentes integradas para residências e empresas modernas.</p>
+                </article>
+
+                <!-- Card 7: Redes & Wi-Fi -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/wifi.svg" alt="Ícone Redes">
+                    </div>
+                    <h3>Redes & Wi-Fi</h3>
+                    <p>Infraestrutura de rede estável e segura para suportar todos os seus sistemas.</p>
+                </article>
+
+                <!-- Card 8: Manutenção Preventiva -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="/assets/icons/tool.svg" alt="Ícone Manutenção">
+                    </div>
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Planos de manutenção para que seus equipamentos durem mais e funcionem melhor.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->  
+    <section id="about" class="about">
+        <div class="container">
+            
+            <div class="about-image-wrapper">
+                <div class="brand-card">
+                    <img src="/assets/icons/logo.png" alt="Logo On Safe Tecnologia" class="brand-logo">
+                    <div class="brand-text">
+                        <h2>ON SAFE</h2>
+                        <p>TECNOLOGIA</p>
+                    </div>
+                </div>
+                <div class="market-badge">
+                    <strong>+8</strong>
+                    <span>ANOS NO MERCADO</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-badge">SOBRE A ON SAFE</span>
+                <h2>Tecnologia e dedicação para a <span>segurança do seu patrimônio</span>.</h2>
+                
+                <p>A <strong>On Safe Tecnologia</strong> nasceu para entregar soluções modernas e confiáveis em segurança eletrônica. Combinamos experiência técnica, equipamentos de ponta e atendimento humano para proteger o que mais importa: sua família, seu patrimônio e seu negócio.</p>
+                
+                <ul class="benefits-list">
+                    <li>
+                        <img src="/assets/icons/check-circle.svg" alt="Check icon" class="check-icon">
+                        <span>Equipe técnica altamente qualificada e certificada</span>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/check-circle.svg" alt="Check icon" class="check-icon">
+                        <span>Equipamentos de última geração das melhores marcas</span>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/check-circle.svg" alt="Check icon" class="check-icon">
+                        <span>Atendimento personalizado e suporte 24/7</span>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/check-circle.svg" alt="Check icon" class="check-icon">
+                        <span>Garantia em todos os serviços executados</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Founder Section --> 
+    <section id="founder" class="founder">
+        <div class="container">
+            
+            <div class="founder-image-wrapper">
+                <div class="founder-glow-effect"></div> <div class="founder-card">
+                    <img src="/assets/images/johnny-founder.png" alt="Johnny Haramoni Soares" class="founder-photo">
+                    <div class="founder-info-tag">
+                        <h3>Johnny Haramoni Soares</h3>
+                        <p>Fundador & CEO — On Safe Tecnologia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="founder-content">
+                <span class="section-badge-dark">QUEM ESTÁ POR TRÁS</span>
+                <h2>Mais de uma década protegendo o o que importa.</h2>
+                
+                <blockquote class="founder-quote">
+                    <p>"Comecei nesse ramo movido pelo desejo de oferecer mais que equipamentos — entregar tranquilidade. Cada projeto da On Safe carrega minha assinatura pessoal: atenção aos detalhes, técnica apurada e respeito ao cliente."</p>
+                </blockquote>
+
+                <p class="founder-bio">
+                    Com mais de 8 anos de experiência em segurança eletrônica, Johnny Haramoni Soares atua com foco em gestão, controle de acesso e soluções tecnológicas para condomínios. À frente da On Safe, oferece serviços completos de venda, instalação, suporte e manutenção, sempre com alto padrão de qualidade, confiança e foco na tranquilidade dos clientes.
+                </p>
+
+                <div class="founder-stats-grid">
+                    
+                    <div class="founder-stat-card">
+                        <div class="stat-icon">
+                            <img src="/assets/icons/briefcase.svg" alt="Ícone Experiência">
+                        </div>
+                        <strong>+8</strong>
+                        <span>Anos de experiência no setor</span>
+                    </div>
+
+                    <div class="founder-stat-card">
+                        <div class="stat-icon">
+                            <img src="/assets/icons/users.svg" alt="Ícone Clientes">
+                        </div>
+                        <strong>+500</strong>
+                        <span>Clientes que confiam no trabalho</span>
+                    </div>
+
+                    <div class="founder-stat-card">
+                        <div class="stat-icon">
+                            <img src="/assets/icons/award.svg" alt="Ícone Qualidade">
+                        </div>
+                        <strong>100%</strong>
+                        <span>Compromisso com a qualidade</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section --> 
+    <section id="differentials" class="features">
+        <div class="container">
+            
+            <div class="features-header">
+                <span class="section-badge">POR QUE ESCOLHER</span>
+                <h2>Diferenciais que fazem a <br><span>diferença</span></h2>
+            </div>
+
+            <!-- Grade  (4 Colunas) -->
+            <div class="features-grid">
+
+                <!-- Card 1: Atendimento Ágil -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/assets/icons/lightning.svg" alt="Ícone Atendimento Ágil">
+                    </div>
+                    <h3>Atendimento Ágil</h3>
+                    <p>Resposta rápida e execução pontual em todos os projetos.</p>
+                </div>
+
+                <!-- Card 2: Tecnologia de Ponta -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/assets/icons/shield-check.svg" alt="Ícone Tecnologia de Ponta">
+                    </div>
+                    <h3>Tecnologia de Ponta</h3>
+                    <p>Equipamentos modernos das melhores marcas do mercado.</p>
+                </div>
+
+                <!-- Card 3: Suporte 24/7 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/assets/icons/headset.svg" alt="Ícone Suporte 24/7">
+                    </div>
+                    <h3>Suporte 24/7</h3>
+                    <p>Estamos disponíveis sempre que você precisar de nós.</p>
+                </div>
+
+                <!-- Card 4: Garantia Total -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/assets/icons/badge-check.svg" alt="Ícone Garantia Total">
+                    </div>
+                    <h3>Garantia Total</h3>
+                    <p>Garantia em serviços e equipamentos instalados.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section --> 
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <span class="section-badge">DEPOIMENTOS</span>
+            <h2>Quem confia, <span>recomenda</span></h2>
+        </div>
+
+        <!-- Estrutura do Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"Desde a implantação da portaria remota da On Safe, tivemos mais segurança e controle de acesso. O atendimento é excelente."</p>
+                        <footer class="testimonial-author"><strong>Carlos Mendes – Síndico</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"A equipe foi muito profissional na instalação do sistema. Hoje me sinto muito mais segura em casa."</p>
+                        <footer class="testimonial-author"><strong>Fernanda Oliveira – Proprietária de Residência</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"Serviço de qualidade e suporte rápido sempre que precisamos. Recomendo a On Safe."</p>
+                        <footer class="testimonial-author"><strong>Ricardo Almeida – Administrador de Condomínio</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"A infraestrutura de monitoramento ficou impecável. O projeto foi executado com muito cuidado e eficiência."</p>
+                        <footer class="testimonial-author"><strong>Juliana Costa – Proprietária de Residência</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"A portaria remota trouxe mais praticidade para os moradores e reduziu custos sem comprometer a segurança."</p>
+                        <footer class="testimonial-author"><strong>Marcelo Santos – Síndico</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">"Escolhemos a On Safe para nossa residência e ficamos impressionados com a tecnologia e o atendimento prestado."</p>
+                        <footer class="testimonial-author"><strong>Patrícia Ribeiro – Cliente Residencial</strong></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section --> 
+    <section id="contact" class="contact">
+        <div class="container">
+            <!-- O Card Geral que une os dois lados -->
+            <div class="contact-card">
+                
+                <!-- COLUNA ESQUERDA: Informações (Lado Azul) -->
+                <div class="contact-info-side">
+                    <span class="contact-badge">FALE CONOSCO</span>
+                    <h2>Solicite seu orçamento <br>sem compromisso.</h2>
+                    <p class="contact-description">
+                        Conte com a On Safe para proteger o que mais importa. Atendimento rápido e personalizado.
+                    </p>
+
+                    <div class="contact-channels">
+                        
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <img src="/assets/icons/phone-white.svg" alt="Ícone Telefone">
+                            </div>
+                            <div class="channel-text">
+                                <span>TELEFONE</span>
+                                <strong>(41) 99661-4746</strong>
+                            </div>
+                        </div>
+
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <img src="/assets/icons/mail-white.svg" alt="Ícone E-mail">
+                            </div>
+                            <div class="channel-text">
+                                <span>E-MAIL</span>
+                                <strong>contato@onsafetecnologia.com.br</strong>
+                            </div>
+                        </div>
+
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <img src="/assets/icons/map-white.svg" alt="Ícone Atendimento">
+                            </div>
+                            <div class="channel-text">
+                                <span>ATENDIMENTO</span>
+                                <strong>Em Curitiba, Região Metropolitana e em todo o Paraná e Santa Catarina.</strong>
+                            </div>
+                        </div>
+
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <img src="/assets/icons/clock-white.svg" alt="Ícone Horário">
+                            </div>
+                            <div class="channel-text">
+                                <span>HORÁRIO</span>
+                                <strong>Suporte emergencial 24/7</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLUNA DIREITA: Formulário (Lado Branco) -->
+                <div class="contact-form-side">
+                    <h3>Envie sua solicitação</h3>
+                    
+                    <form action="#" class="contact-form" id="wpp-form">
+                        
+                        <!-- Linha Dupla (Nome e Telefone lado a lado) -->
+                        <div class="form-row-twin">
+                            <div class="input-group">
+                                <input type="text" id="form-name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="form-phone" placeholder="Telefone" maxlength="15" required>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="input-group">
+                            <input type="email" id="form-email" placeholder="E-mail" required>
+                        </div>
+
+                        <!-- Seleção de Serviço -->
+                        <div class="input-group">
+                            <input type="text" id="form-service" placeholder="Qual serviço deseja?">
+                        </div>
+
+                        <!-- Mensagem / Texto -->
+                        <div class="input-group">
+                            <textarea id="form-message" placeholder="Conte um pouco sobre seu projeto..." rows="4"></textarea>
+                        </div>
+
+                        <!-- Botão de Envio Estilo WhatsApp -->
+                        <button type="submit" class="btn-submit-wpp">
+                            <img src="/assets/icons/wpp-white.svg" alt="WhatsApp Icon" class="btn-wpp-icon">
+                            Enviar pelo WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section --> 
+    <footer class="main-footer">
+        <div class="container">
+            
+            <!-- PARTE SUPERIOR: 3 Colunas principais -->
+            <div class="footer-top">
+                
+                <!-- Coluna 1: Logo e Descrição Curta -->
+                <div class="footer-column brand-info">
+                    <div class="logo-footer">
+                        <img src="/assets/icons/logo.png" alt="On Safe Tecnologia Logo">
+                        <div class="logo-text">
+                            <h3>ON SAFE</h3>
+                            <p>TECNOLOGIA</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Soluções completas em segurança eletrônica para condomínios, empresas e residências.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Links de Navegação rápida -->
+                <div class="footer-column navigation-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre nós</a></li>
+                        <li><a href="#founder">Fundador</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Informações de Contato e Redes Sociais -->
+                <div class="footer-column contact-info">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <img src="/assets/icons/phone-white.svg" alt="Telefone" class="footer-icon">
+                            <span>(41) 99661-4746</span>
+                        </li>
+                        <li>
+                            <img src="/assets/icons/mail-white.svg" alt="E-mail" class="footer-icon">
+                            <span>contato@onsafetecnologia.com.br</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Ícones de Redes Sociais -->
+                    <div class="social-medias">
+                        <a href="https://www.instagram.com/onsafe_tecnologia" class="social-btn" target="_blank" aria-label="Instagram">
+                            <img src="/assets/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-btn" target="_blank" aria-label="Facebook">
+                            <img src="/assets/icons/facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LINHA DIVISÓRIA, COPYRIGHT E ASSINATURA -->
+            <div class="footer-bottom">
+                <p class="copyright-text">&copy; 2026 On Safe Tecnologia. Todos os direitos reservados.</p>
+                <p class="developer-text">Developed by <a href="https://seusite.com.br" target="_blank">Jhonny Da Silva</a></p>
+             </div>
+
+        </div>
+    </footer>    
+    <script src="/assets/js/script.js"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
 </body>
 </html>
